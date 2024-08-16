@@ -1,0 +1,98 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('/caminho/para/Calibre-Regular.woff2') format('woff2'),
+       url('/caminho/para/Calibre-Regular.woff') format('woff'),
+       url('/caminho/para/Calibre-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.titulo_sobre_mim {
+  font-size: 30px;
+  font-family: 'Calibre', sans-serif;
+  animation: fadeIn 3s steps(40, end);
+  text-align: left;
+  margin-left: 200px;
+  color: #ffffff;
+  margin-top: 90px;
+  font-weight: 900;
+}
+
+.titulo_sobre_mim::after {
+  content: "";
+  display: block;
+  position: relative;
+  margin-top: -15px;
+  width: 400px;
+  height: 2px;
+  margin-left: 220px;
+  background-color: #6c8dc0;
+  animation: fadeIn 3s steps(40, end);
+}
+
+.texto_sobre_mim {
+  margin-left: 220px;
+  text-align: left;
+  animation: fadeIn 3s steps(40, end);
+  font-family: sans-serif;
+  color: #aaa8a8;
+  width: 600px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.conteudo {
+  display: flex; /* Configura o layout flexível */
+  justify-content: space-between; /* Espaça os itens igualmente */
+  animation: fadeIn 3s steps(40, end);
+}
+
+.competencias {
+  width: 35%; /* Ajuste a largura conforme necessário */
+  padding: 20px;
+  color: #ffffff;
+}
+
+.competencias h2 {
+  font-size: 25px;
+  margin-top: 0;
+  font-family: courier;
+  color: #ffffff;
+  font-family: 'Calibre', sans-serif;
+  font-weight: 900;
+  border-bottom: 2px solid #6c8dc0;
+}
+
+.competencias ul {
+  margin-top: 20px;
+  font-size: 20px;
+  list-style-type: none; /* Remove o estilo de lista padrão */
+  color: #aaa8a8;
+  padding-left: 0; /* Remove o padding padrão da lista */
+}
+
+.competencias li {
+  margin-bottom: 10px;
+  position: relative; /* Necessário para posicionar a seta */
+  padding-left: 20px; /* Espaçamento para a seta */
+}
+
+.competencias li::before {
+  content: '■'; /* Adiciona a seta antes de cada item */
+  position: absolute;
+  left: 0; /* Posiciona a seta à esquerda */
+  color: rgba(70, 230, 238, 0.664); /* Define a cor da seta */
+  font-size: 12px; /* Tamanho da seta */
+  transform: translateY(2px); /* Ajusta o alinhamento vertical da seta */
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

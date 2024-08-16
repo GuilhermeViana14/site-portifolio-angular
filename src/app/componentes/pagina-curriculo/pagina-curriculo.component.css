@@ -1,0 +1,10 @@
+
+
+.curriculo {
+  border-radius: 10px; /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  max-width: 700px; /* Largura máxima da imagem */
+  display: block; /* Para centralizar a imagem */
+  margin: auto;
+  animation: slideInLeft 2s ease-out;
+}
