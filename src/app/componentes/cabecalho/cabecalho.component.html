@@ -1,5 +1,5 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-<body>
+
   <nav class="navbar" [class.hidden]="navbarHidden">
     <a routerLink="/" routerLinkActive="active" class="logo"> 
       <div class="logo-pentagon">
@@ -7,8 +7,9 @@
       </div>
     </a>
     <ul class="nav-links">
-      <li><a href="#">Projetos</a></li>
+      <li><a routerLink="/projetos" routerLinkActive="active">Projetos</a></li>
       <li><a href="mailto:guilhermevianafilgueiras@gmail.com?subject=Contato%20pelo%20site&body=Olá%2C%20Gostaria%20de%20entrar%20em%20contato%20com%20voc%C3%AA.%20Por%20favor%20responda%20a%20esta%20mensagem.">Entre em Contato</a></li>
     </ul>
   </nav>
-</body>
+
+<router-outlet></router-outlet>
