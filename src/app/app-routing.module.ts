@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { PaginaSobreMimComponent } from './componentes/pagina-sobre-mim/pagina-sobre-mim.component';
-import { PaginaProjetosComponent } from './componentes/pagina-projetos/pagina-projetos.component';
+import { HomeTextosComponent } from './componentes/home-textos/home-textos.component';
+import { ProjetoListarComponent } from './componentes/projeto-listar/projeto-listar.component';
 const routes: Routes = [
 
-  {path:'sobreMim', component: PaginaSobreMimComponent},
-  {path:'projetos', component: PaginaProjetosComponent},
+  { path: '', component: HomeTextosComponent },
+  { path: 'projetos', component: ProjetoListarComponent }, 
+  { path: '**', redirectTo: '' }
 ];
 
 @NgModule({
