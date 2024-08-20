@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { CabecalhoComponent } from './componentes/cabecalho/cabecalho.component';
 import { HomeTextosComponent } from './componentes/home-textos/home-textos.component';
 import { PaginaSobreMimComponent } from './componentes/pagina-sobre-mim/pagina-sobre-mim.component';
-import { PaginaProjetosComponent } from './componentes/pagina-projetos/pagina-projetos.component';
+import { ProjetoListarComponent } from './componentes/projeto-listar/projeto-listar.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -14,12 +16,13 @@ import { PaginaProjetosComponent } from './componentes/pagina-projetos/pagina-pr
     CabecalhoComponent,
     HomeTextosComponent,
     PaginaSobreMimComponent,
-    PaginaProjetosComponent,
+    ProjetoListarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InfiniteScrollModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

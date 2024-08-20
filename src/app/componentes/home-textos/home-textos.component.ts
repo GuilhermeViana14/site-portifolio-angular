@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PaginaSobreMimComponent } from '../pagina-sobre-mim/pagina-sobre-mim.component'; 
 
 @Component({
   selector: 'app-home-textos',
