@@ -1,7 +1,20 @@
+@font-face {
+  font-family: 'Calibre';
+  src: url('/caminho/para/Calibre-Regular.woff2') format('woff2'),
+       url('/caminho/para/Calibre-Regular.woff') format('woff'),
+       url('/caminho/para/Calibre-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .container {
     padding: 20px;
     margin-top: 20px;
     animation: fadeIn 3s steps(40, end);
+    font-family: 'Calibre', sans-serif;
+    font-weight: 900;
+    line-height: 1.1;
+    
   }
   
   .project-list {
@@ -9,6 +22,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Define 3 colunas de tamanho igual */
     gap: 20px; /* Espaçamento entre os itens */
+    
   }
   
   .project-item {
@@ -19,6 +33,7 @@
     text-align: center;
     position: relative; /* Necessário para a animação */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave para animação */
+    
   }
   
   .project-link {
@@ -32,11 +47,19 @@
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
   }
   
+  .h2 {
+    color: #ffffff; /* Cor branca para o nome do projeto */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+    border-bottom: 3px solid #6c8dc0;
+    
+  }
+  
   .project-item h3 {
     color: #ffffff; /* Cor branca para o nome do projeto */
     margin: 10px 0;
     transition: color 0.3s ease; /* Transição suave para a cor */
     font-size: 25px;
+    
   }
   
   .project-item:hover h3 {
