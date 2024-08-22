@@ -1,0 +1,22 @@
+{
+  "projetos": [
+    {
+      "name": "Projeto 1",
+      "tools": "Ferramenta A, Ferramenta B",
+      "image": "assets/imagens/project1-imagem.jpg",
+      "url": "https://example.com/projeto1"
+    },
+    {
+      "name": "Projeto 2",
+      "tools": "Ferramenta C, Ferramenta D",
+      "image": "assets/imagens/project2-imagem.jpg",
+      "url": "https://example.com/projeto2"
+    },
+    {
+      "name": "Projeto 3",
+      "tools": "Ferramenta E, Ferramenta F",
+      "image": "assets/imagens/project3-imagem.jpg",
+      "url": "https://example.com/projeto3"
+    }
+  ]
+}

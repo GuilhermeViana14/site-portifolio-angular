@@ -12,8 +12,14 @@ export class ProjetoListarComponent implements OnInit {
   constructor(private projetosService: ProjetosService) { }
 
   ngOnInit(): void {
-    this.projetosService.getProjetos().subscribe((data: Projeto[]) => {
-      this.projects = data;
-    });
+    this.projetosService.getProjetos().subscribe(
+      (data: Projeto[]) => {
+        console.log('Dados recebidos:', data);  // Log dos dados recebidos
+        this.projects = data;
+      },
+      error => {
+        console.error('Erro ao buscar projetos:', error);  // Log de erro
+      }
+    );
   }
 }
