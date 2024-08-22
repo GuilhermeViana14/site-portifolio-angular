@@ -1,10 +1,10 @@
 {
   "projetos": [
     {
-      "name": "Projeto 1",
-      "tools": "Ferramenta A, Ferramenta B",
+      "name": "Organizador de Tarefas",
+      "tools": "React Native",
       "image": "assets/imagens/project1-imagem.jpg",
-      "url": "https://example.com/projeto1"
+      "url": "https://github.com/GuilhermeViana14/Organizador-de-tarefas"
     },
     {
       "name": "Projeto 2",
