@@ -1,22 +1,22 @@
 {
     "projetos": [
         {
-            "name": "Projeto 1",
+            "name": "App mobile",
             "tools": "Ferramenta A, Ferramenta B",
             "image": "http://localhost:4200/assets/imagens/project1-imagem.jpg",
             "url": "https://example.com/projeto1"
           },
           {
-            "name": "Projeto 2",
+            "name": "Space invaders",
             "tools": "Ferramenta C, Ferramenta D",
             "image": "http://localhost:4200/assets/imagens/project2-imagem.jpg",
             "url": "https://example.com/projeto2"
           },
           {
-            "name": "Projeto 3",
-            "tools": "Ferramenta E, Ferramenta F",
+            "name": "Organizador de Tarefas",
+            "tools": "React native",
             "image": "http://localhost:4200/assets/imagens/project3-imagem.jpg",
-            "url": "https://example.com/projeto2"
+            "url": "https://github.com/GuilhermeViana14/Organizador-de-tarefas"
           }
     
     
