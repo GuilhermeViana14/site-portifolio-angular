@@ -19,8 +19,8 @@ h2 {
   color: #ffffff;
   font-weight: bold;
   font-size: 4rem;
-  text-align: center;
-  margin-top: 100px;
+  text-align: left;
+  font-family: 'Calibre', sans-serif;
 }
 
 .header {
@@ -72,4 +72,9 @@ h2 {
   .container {
       width: 1140px;
   }
+}
+
+
+html {
+  scroll-behavior: smooth;
 }

@@ -8,6 +8,7 @@
 }
 
 .titulo_sobre_mim {
+  animation: slideInFromLeft 1s ease-out; /* Aplica a animação de deslizar */
   font-size: 30px;
   font-family: 'Calibre', sans-serif;
   text-align: left;
@@ -15,7 +16,6 @@
   color: #ffffff;
   margin-top: 90px;
   font-weight: 900;
-  animation: fadeIn 3s steps(40, end);
 }
 
 .titulo_sobre_mim::after {
@@ -26,16 +26,15 @@
   width: 400px;
   height: 2px;
   margin-left: 220px;
-  background-color: #6c8dc0;
-  animation: fadeIn 3s steps(40, end);
+  background: linear-gradient(45deg, rgba(0, 204, 255, 0.8), rgba(0, 102, 204, 0.8)); /* Gradiente neon */
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.8); /* Efeito de brilho neon */
 }
 
 .texto_sobre_mim {
   margin-left: 220px;
   text-align: left;
-  animation: fadeIn 3s steps(40, end);
   font-family: sans-serif;
-  color: #aaa8a8;
+  color: #ffffff;
   width: 600px;
   margin-top: 20px;
   font-size: 20px;
@@ -44,32 +43,46 @@
 .conteudo {
   display: flex; /* Configura o layout flexível */
   justify-content: space-between; /* Espaça os itens igualmente */
-  animation: fadeIn 3s steps(40, end);
 }
 
 .competencias {
   width: 35%; /* Ajuste a largura conforme necessário */
   padding: 20px;
   color: #ffffff;
+  
 }
+
+
 
 .competencias h2 {
   font-size: 25px;
+  text-align: left;
   margin-top: 0;
-  font-family: courier;
-  color: #ffffff;
+  width: 60%;
   font-family: 'Calibre', sans-serif;
+  color: #ffffff;
   font-weight: 900;
-  border-bottom: 2px solid #6c8dc0;
+  position: relative; /* Necessário para posicionar a borda neon */
+  padding-bottom: 10px; /* Adiciona espaço para a borda neon */
 }
 
+
 .competencias ul {
+  align-items: center;
   margin-top: 20px;
+  width: 45%;
   font-size: 20px;
   list-style-type: none; /* Remove o estilo de lista padrão */
-  color: #aaa8a8;
+  color: white;
   padding-left: 0; /* Remove o padding padrão da lista */
+  border: linear-gradient(45deg, rgba(0, 204, 255, 0.8), rgba(0, 102, 204, 0.8)); /* Gradiente neon */
+  box-shadow: 0 0 10px rgba(0, 204, 255, 0.8); /* Efeito de brilho neon */
+  padding: 20px; /* Adiciona padding interno */
+  background: rgba(0, 0, 0, 0.2); /* Fundo transparente com leve cor para contraste */
+  position: relative; /* Necessário para o efeito de brilho */
 }
+
+
 
 .competencias li {
   margin-bottom: 10px;
@@ -88,11 +101,23 @@
 
 @keyframes fadeIn {
   0% {
-      opacity: 0;
-      transform: translateY(-20px);
+    opacity: 0;
+    transform: translateY(-20px);
   }
   100% {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Define a animação de deslizar da esquerda */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Começa fora da tela à esquerda */
+    opacity: 0; /* Começa invisível */
+  }
+  to {
+    transform: translateX(0); /* Move para a posição final */
+    opacity: 1; /* Fica visível */
   }
 }

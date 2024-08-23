@@ -1,14 +1,14 @@
+<h2 class="meu-projeto-h2">Meus Projetos</h2>
 <div class="container">
-  <h2>Meus Projetos</h2>
-  <div class="project-list">
+  <div class="project-list" #projectList>
     <div *ngFor="let project of projects" class="project-item">
-      <a [href]="project.url" target="_blank" class="project-link">
+      <div class="project-content">
         <h3>{{ project.name }}</h3>
         <p>Ferramentas: {{ project.tools }}</p>
         <div class="project-image-wrapper">
           <img [src]="project.image" [alt]="project.name" class="project-image">
         </div>
-      </a>
+      </div>
     </div>
   </div>
 </div>
