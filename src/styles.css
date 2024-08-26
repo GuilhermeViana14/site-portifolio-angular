@@ -52,21 +52,32 @@ h2 {
   margin-left: auto;
 }
 
-.botao {
-  background: #154580;
-  color: #ffffff;
-  max-width: 270px;
-  width: 250px;
-  padding: 1rem;
-  margin: 0 auto;
-  border: 2px solid #154580;
-  border-radius: 10px;
-  transition: 0.5s ease;
+
+.underline {
+  display: inline-block; /* Faz a linha se ajustar ao comprimento do texto */
+  padding-bottom: 5px; /* Espaçamento entre o texto e a linha */
+  font-weight: 600;
+  position: relative;
 }
 
-.botao:hover {
-  border: 2px solid #84EEC1;
-  color: #84EEC1;
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px; /* Grossura da linha */
+  background-color: rgb(255, 255, 255); /* Cor da linha animada */
+  transition: width 0.5s ease-in-out; /* Transição suave */
+}
+
+.underline:hover::after {
+  width: 100%; /* Expande a linha para o comprimento total do texto */
+}
+
+/* Animação de carregamento */
+.underline::after {
+  animation: underline-load 3s ease forwards; /* Define a animação */
 }
 
 
@@ -105,4 +116,14 @@ html {
       transform: translateX(0); /* Move para a posição final */
       opacity: 1; /* Fica visível */
     }
+}
+
+
+@keyframes underline-load {
+  0% {
+    width: 0;
   }
+  100% {
+    width: 100%;
+  }
+}
