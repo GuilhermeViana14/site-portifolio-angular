@@ -9,7 +9,7 @@ import { AppComponent } from "../../app.component";
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent{
-  /* navbarHidden = false; // Inicialmente a navbar não está oculta
+  navbarHidden = false; // Inicialmente a navbar não está oculta
 
   constructor(private renderer: Renderer2) {}
 
@@ -27,5 +27,5 @@ export class NavBarComponent{
       this.renderer.removeClass(navbar, 'hidden');
       this.renderer.addClass(navbar, 'visible');
     }
-  } */
+  }
 }
