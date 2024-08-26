@@ -11,8 +11,13 @@
     display: flex;
     align-items: center; /* Alinha verticalmente ao centro */
     gap: 20px; /* Espaçamento entre o texto e a imagem */
+
 }
 
+/* Aplica a inversão em todos os segundos elementos (pares) */
+.linguagem-container:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
 
 .h2-linguagens {
     font-size: 35px;
@@ -41,19 +46,11 @@ p {
 }
 
 
-.underline {
-    color: rgb(255, 255, 255); /* Cor do texto */
-    border-bottom: 3px solid rgb(255, 255, 255); /* Grossura e cor da linha sublinhada */
-    display: inline-block; /* Faz a linha se ajustar ao comprimento do texto */
-    padding-bottom: 5px; /* Espaçamento entre o texto e a linha */
-    font-weight: 600;
-}
-
 .imagem {
+    margin-left: 5%;
     display: block;
     max-width: 550px; /* Limite máximo da largura */
     width: 100%; /* Ajuste para que a imagem seja responsiva */
     height: auto; /* Mantém a proporção da imagem */
-    align-items: right;
     border-radius: 10px;
 }
