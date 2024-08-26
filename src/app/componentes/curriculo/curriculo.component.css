@@ -17,7 +17,7 @@
 .h2-linguagens {
     font-size: 35px;
     animation: none; /* Remove a animação se aplicada anteriormente */
-    color: #000000; /* Cor do texto do título */
+    color: #ffffff; /* Cor do texto do título */
     margin-bottom: 20px; /* Espaçamento abaixo do título */
     font-family: 'Calibre', sans-serif;
     font-weight: 600;
@@ -27,7 +27,7 @@ p {
     margin-top: 5%;
     margin-right: 4%;
     margin-left: 4%;
-    color: #000000; /* Cor do texto */
+    color: #ffffff; /* Cor do texto */
     line-height: 1.6; /* Altura da linha para melhor leitura */
     font-family: 'Arial', sans-serif; /* Fonte padrão */
     word-spacing: 0.4em; /* Espaçamento entre palavras */
@@ -42,8 +42,8 @@ p {
 
 
 .underline {
-    color: black; /* Cor do texto */
-    border-bottom: 3px solid black; /* Grossura e cor da linha sublinhada */
+    color: rgb(245, 245, 245); /* Cor do texto */
+    border-bottom: 3px solid rgb(255, 255, 255); /* Grossura e cor da linha sublinhada */
     display: inline-block; /* Faz a linha se ajustar ao comprimento do texto */
     padding-bottom: 5px; /* Espaçamento entre o texto e a linha */
     font-weight: 600;
