@@ -3,7 +3,7 @@ main {
     min-height: 100vh; /* Altura mínima da tela */
     width: 100%;
     overflow: hidden;
-    background: linear-gradient(45deg, #000000, #000000 35%, rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0.9)),
+    background: linear-gradient(45deg, #000000, #000000 45%, rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0.9)),
                 linear-gradient(to bottom, #000000, #1a0000 50%, #1a0000 51%, #000000);
     background-size: cover;
     background-position: center center;
