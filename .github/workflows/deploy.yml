@@ -3,29 +3,29 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # Define que o workflow deve ser executado em commits para a branch main
+      - main  # Ou a branch que você está usando
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest  # Define o sistema operacional do runner
+  build:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3  # Baixa o código do repositório
+    - name: Checkout repository
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'  # Define a versão do Node.js
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '20.17.0'  # Especifique a versão do Node.js aqui
 
-      - name: Install dependencies
-        run: npm install  # Instala as dependências do projeto
+    - name: Install dependencies
+      run: npm install
 
-      - name: Build Angular project
-        run: npm run build -- --prod --output-path docs --base-href /site-portifolio-angular/  # Compila o projeto Angular
+    - name: Build the project
+      run: ng build --prod --output-path docs --base-href /site-portifolio-angular/
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}  # Token de acesso do GitHub
-          publish_dir: ./docs  # Diretório que contém os arquivos para o GitHub Pages
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
