@@ -1,0 +1,41 @@
+.introducao_1 {
+    margin-top: 29%;
+    font-size: 30px;
+    font-family: courier;
+    animation: slideInFromLeft 1s ease-out; /* Aplica a animação de deslizar */
+    text-align: left;
+    margin-left: -5%;
+    color: white;
+  }
+  
+.introducao_2{
+    width: 600px;
+    font-size: 20px;
+    color: #ffffff;
+    animation: slideInFromLeft 1s ease-out; /* Aplica a animação de deslizar */
+    margin-left: 20%;
+    font-family: sans-serif;
+}
+
+.social-icons {
+    display: flex;
+    gap: 2%; /* Espaço entre os ícones */
+    margin-top: 10px; /* Espaço acima dos ícones */
+    margin-left: 20px; /* Ajusta o alinhamento dos ícones à esquerda, para corresponder aos textos */
+    animation: slideInFromLeft 1s ease-out; /* Aplica a animação de deslizar */
+    
+  }
+  
+  .icon-link {
+    color: #ffffff; /* Cor dos ícones */
+    font-size: 30px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease, transform 0.3s ease; /* Adiciona uma transição suave para cor e tamanho */
+  }
+  
+  .icon-link:hover {
+    color: rgb(255, 29, 29); /* Cor dos ícones ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho dos ícones ao passar o mouse */
+  }
+  
+  
