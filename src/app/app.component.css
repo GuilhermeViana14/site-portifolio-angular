@@ -1,32 +1,37 @@
 main {
-  background: linear-gradient(45deg, #0a192f, #0a192f 20%, rgba(0, 102, 204, 0.5), rgba(0, 102, 204, 0.7)); /* Adiciona um gradiente neon ao fundo */
-  min-height: 120vh; 
-  width: 100%;
-  position: relative; 
-  overflow: hidden; /* Garante que os efeitos não vazem do container */
+    position: relative;
+    min-height: 100vh; /* Altura mínima da tela */
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(45deg, #000000, #000000 35%, rgba(77, 0, 0, 0.7), rgba(102, 0, 0, 0.9)),
+                linear-gradient(to bottom, #000000, #1a0000 50%, #1a0000 51%, #000000);
+    background-size: cover;
+    background-position: center center;
+    scroll-behavior: smooth;
 }
 
-main::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0, 102, 204, 0.2) 0%, rgba(0, 51, 102, 0.4) 100%); /* Gradiente radial ajustado */
-  filter: blur(8px); /* Adiciona desfoque ao brilho */
-  z-index: -1; /* Garante que o brilho fique atrás do conteúdo */
+
+.break2 {
+    position: relative;
+    width: 100%;
+    height: 1.5vh; /* Altura da quebra */
+    background: linear-gradient(45deg, #000000, #000000 60%, rgba(58, 38, 38, 0), rgba(53, 8, 8, 0)),
+                linear-gradient(to bottom, #000000, #1a0000 50%, #1a0000 51%, #000000);
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 1.5% 100%); /* Lado esquerdo reto e lado direito com diagonal */
 }
 
-main::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(0, 102, 204, 0.3) 0%, rgba(0, 51, 102, 0.4) 100%); /* Gradiente radial ajustado */
-  filter: blur(20px); /* Aumenta o desfoque para um efeito mais pronunciado */
-  z-index: -2; /* Garante que o brilho fique atrás do conteúdo e do brilho principal */
-  opacity: 0.3; /* Ajusta a opacidade para um brilho mais suave */
+
+
+
+.background_branco {
+    position: relative;
+    min-height: 100vh; /* Altura mínima da tela */
+    width: 100%;
+    overflow: hidden;
+    background: white;
+    background-size: cover;
+    background-position: center center;
+    
+
 }

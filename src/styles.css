@@ -1,6 +1,14 @@
-
+/* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-
+@font-face {
+    font-family: 'Calibre';
+    src: url('/caminho/para/Calibre-Regular.woff2') format('woff2'),
+         url('/caminho/para/Calibre-Regular.woff') format('woff'),
+         url('/caminho/para/Calibre-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
 * {
   margin: 0;
   padding: 0;
@@ -10,17 +18,25 @@
 .ff-roboto-mono { font-family: 'Roboto Mono', monospace; }
 
 h1 {
-  color: rgb(70, 230, 238);
-  font-weight: bold;
-  
+    font-size: 80px;
+    font-family: 'Calibre', sans-serif;
+    text-align: left;
+    color: white;
+    font-weight: 900;
+    line-height: 1.1;
+    animation: slideInFromLeft 1s ease-out;
 }
 
 h2 {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 4rem;
-  text-align: left;
-  font-family: 'Calibre', sans-serif;
+    margin-top: 4%;
+    font-size: 50px;
+    font-family: 'Calibre', sans-serif;
+    text-align: left;
+    margin-left: 3%; 
+    color: white;
+    font-weight: 900;
+    line-height: 1.1;
+    animation: slideInFromLeft 1s ease-out;
 }
 
 .header {
@@ -53,6 +69,11 @@ h2 {
   color: #84EEC1;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 @media (min-width: 576px) {
   .container {
       width: 540px;
@@ -74,7 +95,14 @@ h2 {
   }
 }
 
-
-html {
-  scroll-behavior: smooth;
-}
+/* Define a animação de deslizar da esquerda */
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%); /* Começa fora da tela à esquerda */
+      opacity: 0; /* Começa invisível */
+    }
+    to {
+      transform: translateX(0); /* Move para a posição final */
+      opacity: 1; /* Fica visível */
+    }
+  }

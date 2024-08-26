@@ -1,0 +1,41 @@
+/* Estilo geral para o container */
+.container {
+    display: flex; /* Alinha os quadrados horizontalmente */
+    justify-content: space-around; /* Espaça os quadrados igualmente */
+    flex-wrap: wrap; /* Permite que os quadrados se movam para a linha abaixo em telas menores */
+    margin-left: 1%;
+}
+
+/* Estilo para o quadrado */
+.text-container {
+    margin-top: 3%;
+    margin-left: 10%;
+    background-color: none; /* Fundo transparente */
+    border: 4px solid red; /* Cor da borda */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Efeito de brilho neon vermelho */
+    max-width: 450px; /* Largura máxima do quadrado */
+    width: 45%; /* Largura dos quadrados para ajustarem ao espaço disponível */
+    height: 40vh; /* Altura do quadrado */
+    text-align: left; /* Alinha o texto à esquerda */
+    box-sizing: border-box; 
+    margin-bottom: 20px; /* Espaçamento abaixo dos quadrados */
+}
+
+/* Ajuste para o título dentro do quadrado */
+.h2-curiosidades {
+    font-size: 20px;
+    animation: none; /* Remove a animação se aplicada anteriormente */
+    color: #ffffff; /* Cor do texto do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+/* Estilo para o parágrafo */
+p {
+    margin-right: 4%;
+    margin-left: 4%;
+    color: #ffffff; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor leitura */
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    word-spacing: 0.4em; /* Espaçamento entre palavras */
+    font-size: 16px; /* Tamanho da fonte */
+}
